@@ -22,3 +22,8 @@ img {
   height: 150px;
   width: 200px;
 }
+
+label {
+  size: big;
+  font-family: cursive;
+}
