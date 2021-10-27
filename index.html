@@ -9,7 +9,7 @@
     <h1>Calculate Price of CandyMan</h1>
     <form name="frm-pin" method="post" action="pin-index-a.php">
         <input type="hidden" name="mode" value="PinRequest" />
-        <label class="w3-text-green"><i>Number Of CandyMan: </i></label><br><br>
+        <label class="w3-text-green"><i>Number Of CandyMan: </i></label><br><br><br><br>
         <select name="tot_pin_requested" onchange="calculateAmount(this.value)" required>
 			<option value="" disabled selected>Choose your option</option>
 			<option value="1000">1k</option>
@@ -23,7 +23,7 @@
 			<option value="9000">9k</option>
 			<option value="10000">10k</option>
 		</select>
-        <br><br><label><i>Price in usds (approx): </i></label><br><br>
+        <br><br><label><i>Price in usds (approx): </i></label><br><br><br><br>
         <input class="w3-input w3-border" name="tot_amount" id="tot_amount" type="text" readonly>
         <script>
             function calculateAmount(val) {
