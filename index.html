@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Calculate Price of CandyMan</h1>
+    <form name="frm-pin" method="post" action="pin-index-a.php">
+        <input type="hidden" name="mode" value="PinRequest" />
+        <label class="w3-text-green"><i>Number Of CandyMan</i></label>
+        <select name="tot_pin_requested" onchange="calculateAmount(this.value)" required>
+			<option value="" disabled selected>Choose your option</option>
+			<option value="1000">1k</option>
+			<option value="2000">2k</option>
+			<option value="3000">3k</option>
+			<option value="4000">4k</option>
+			<option value="5000">5k</option>
+			<option value="6000">6k</option>
+			<option value="7000">7k</option>
+			<option value="8000">8k</option>
+			<option value="9000">9k</option>
+			<option value="10000">10k</option>
+		</select>
+        <label><i>Price in usds</i></label>
+        <input class="w3-input w3-border" name="tot_amount" id="tot_amount" type="text" readonly>
+        <script>
+            function calculateAmount(val) {
+                var tot_price = val * 0.00072;
+                /*display the result*/
+                var divobj = document.getElementById('tot_amount');
+                divobj.value = tot_price;
+            }
+        </script>
+        <body>
+</html>
